@@ -1,0 +1,61 @@
+# Colors
+colors:
+  bug: &bug "#F44336"
+  epic: &epic' "#2196F3"
+  feature: &feature "#FF9800"
+  review: &review' "#4CAF50"
+
+# Labels
+labels: &common
+  "kind/bug":
+    color: &bug
+    description: A reported bug.
+    alias: ["bug"]
+  "kind/feature":
+    color: &feature
+    description: Indicates the feature branch for an epic.
+    alias: ["enhancement"]
+  "review/Alice":
+    color: &review
+    description: A request for Alice to review the PR.
+  "review/Allan":
+    color: &review
+    description: A request for Allan to review the PR.
+  "review/Doli":
+    color: &review
+    description: A request for Doli to review the PR.
+  "review/Scott":
+    color: &review
+    description: A request for Scott to review the PR.
+  "review/Sophie":
+    color: &review
+    description: A request for Sophie to review the PR.
+  "epic/business review meeting":
+    color: &epic
+  "epic/rolling chassis":
+    color: &epic
+  "epic/prismic integration":
+    color: &epic
+
+# Repositories
+repos:
+  ras-rsso:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  ras-mms:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  ras-rasnet:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  ras-chassis:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
