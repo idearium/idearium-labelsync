@@ -1,54 +1,44 @@
 # Colors
 colors:
-  area: &area "#FFD700"
-  kind: &kind "#3B5BDB"
-  status: &status "#F8F9FA"
-  bug: &bug "#EE0000"
-  priority: &priority "#F783AC"
-  scope: &scope "#27CF79"
-  team: &team'#FDF4E8'
-  release: &release "#A5D8ff"
-  process: &process' "#EB9100"
+  bug: &bug "#F44336"
+  epic: &epic "#2196F3"
+  feature: &feature "#FF9800"
+  review: &review "#4CAF50"
 
 # Labels
 labels: &common
-  "bug/0-needs-info":
-    color: &bug
-    description: More information is needed for reproduction.
-    siblings: ["kind/bug"]
-  "bug/1-repro-available":
-    color: &bug
-    description: A reproduction exists and needs to be confirmed.
-    siblings: ["kind/bug"]
-  "bug/2-confirmed":
-    color: &bug
-    description: We have confirmed that this is a bug.
-    siblings: ["kind/bug"]
   "kind/bug":
-    color: &bug
+    color: *bug
     description: A reported bug.
-    alias: ["bug"]
-  "kind/regression":
-    color: &kind
-    description: A reported bug in functionality that used to work before.
   "kind/feature":
-    color: &kind
-    description: A request for a new feature.
-    alias: ["enhancement"]
-  "kind/improvement":
-    color: &kind
-    description: An improvement to existing feature and code.
-  "kind/docs":
-    color: &kind
-    description: A documentation change is required.
-    alias: ["documentation"]
-  "kind/discussion":
-    color: &kind
-    description: Discussion is required.
-  "kind/question":
-    color: &kind
-    description: Developer asked a question. No code changes required.
-    alias: ["question"]
+    color: *feature
+    description: Indicates the feature branch for an epic.
+  "review/Alice":
+    color: *review
+    description: A request for Alice to review the PR.
+  "review/Allan":
+    color: *review
+    description: A request for Allan to review the PR.
+  "review/Doli":
+    color: *review
+    description: A request for Doli to review the PR.
+  "review/Scott":
+    color: *review
+    description: A request for Scott to review the PR.
+  "review/Sophie":
+    color: *review
+    description: A request for Sophie to review the PR.
+  "epic/business review meeting":
+    color: *epic
+  "epic/rolling chassis":
+    color: *epic
+  "epic/prismic integration":
+    color: *epic
 
 # Repositories
 repos:
+  "*":
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
