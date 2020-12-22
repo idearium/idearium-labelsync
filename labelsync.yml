@@ -1,9 +1,9 @@
 # Colors
 colors:
   bug: &bug "#F44336"
-  epic: &epic' "#2196F3"
+  epic: &epic "#2196F3"
   feature: &feature "#FF9800"
-  review: &review' "#4CAF50"
+  review: &review "#4CAF50"
 
 # Labels
 labels: &common
