@@ -4,6 +4,7 @@ colors:
   epic: &epic "#2196F3"
   feature: &feature "#FF9800"
   review: &review "#4CAF50"
+  status: &status "#E91E63"
 
 # Labels
 labels: &common
@@ -13,6 +14,15 @@ labels: &common
   "kind/feature":
     color: *feature
     description: Indicates the feature branch for an epic.
+  "status/alpha":
+    color: *status
+    description: Indicates the PR is on Alpha.
+  "status/beta":
+    color: *status
+    description: Indicates the PR is on Beta.
+  "status/production":
+    color: *status
+    description: Indicates the PR is on Production.
   "review/Alice":
     color: *review
     description: A request for Alice to review the PR.
