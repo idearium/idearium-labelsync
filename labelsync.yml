@@ -67,3 +67,8 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  "ras-bookings":
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
