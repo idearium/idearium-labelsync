@@ -47,11 +47,6 @@ labels: &common
 
 # Repositories
 repos:
-  "ras-rsso":
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
   "ras-mms":
     config:
       removeUnconfiguredLabels: true
