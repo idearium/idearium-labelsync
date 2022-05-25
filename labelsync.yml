@@ -29,21 +29,9 @@ labels: &common
   "review/Allan":
     color: *review
     description: A request for Allan to review the PR.
-  "review/Doli":
-    color: *review
-    description: A request for Doli to review the PR.
   "review/Scott":
     color: *review
     description: A request for Scott to review the PR.
-  "review/Sophie":
-    color: *review
-    description: A request for Sophie to review the PR.
-  "epic/business review meeting":
-    color: *epic
-  "epic/rolling chassis":
-    color: *epic
-  "epic/prismic integration":
-    color: *epic
 
 # Repositories
 repos:
@@ -52,7 +40,7 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
-  "ras-rasnet":
+  "ras-api":
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -62,7 +50,7 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
-  "ras-bookings":
+  "ras-rasnet":
     config:
       removeUnconfiguredLabels: true
     labels:
