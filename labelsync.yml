@@ -35,22 +35,7 @@ labels: &common
 
 # Repositories
 repos:
-  "ras-mms":
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  "ras-api":
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  "ras-chassis":
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  "ras-rasnet":
+  "ras-rsc":
     config:
       removeUnconfiguredLabels: true
     labels:
